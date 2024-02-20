@@ -16,3 +16,5 @@ Develoyment
 8---continue
 
 npm i validator ----> package for validation
+
+npm i express-async errors--> replace the try catch block.
