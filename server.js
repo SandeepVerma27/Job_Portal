@@ -11,6 +11,8 @@ import connectDB from "./config/db.js";
 import authRoutes from "./routes/authRoutes.js";
 import testRoutes from "./routes/testRoutes.js";
 import errorMiddleware from "./middlewares/errorMiddleware.js";
+import userRoutes from "./routes/userRoute.js";
+import jobRoutes from "./routes/jobsRoutes.js";
 const app = express();
 
 // config
@@ -26,11 +28,14 @@ app.use(morgan("dev"));
 // routes
 app.use("/api/v1/test", testRoutes);
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/job", jobRoutes);
+
 // validation middleware
 app.use(errorMiddleware);
 
-const PORT = process.env.PORT || 8080;
-app.listen(8000, () => {
+const PORT = process.env.PORT || 5000;
+app.listen(8080, () => {
   console.log(
     `Server is ${process.env.DEV_MODE} running at http://localhost:${PORT}`
       .yellow

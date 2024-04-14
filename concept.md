@@ -18,3 +18,24 @@ Develoyment
 npm i validator ----> package for validation
 
 npm i express-async errors--> replace the try catch block.
+
+---hashing password------
+incrypt code of our password 
+
+bcrypt.js----npm i 
+
+JWT-----> json web token 
+secret token to encrypt data
+
+---npm i jsonwebtoken
+
+---when page is loaded then two spaces is create one is the 'header' and second is the 'body'.
+
+
+--meta tag the contain the header section 
+--header section work behind the scene of the website and work for the seo also
+
+--
+
+
+
